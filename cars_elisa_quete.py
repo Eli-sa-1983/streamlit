@@ -17,10 +17,10 @@ df_cars
 #graphique
 st.line_chart(df_cars['cubicinches'])
 
-st.sidebar.title("coucou")
-st.sidebar.write("hello")
+st.sidebar.title("Elisa")
+st.sidebar.write("Cid")
 
 option_velo = st.sidebar.selectbox(
-	    'Quel type de vélo ?',
-	    ('mechanical', 'ebike'))
+	    'Quel marché vouslez vous voir ?',
+	    ('US.','Europe.', 'Japan.'))
 
