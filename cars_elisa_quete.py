@@ -1,9 +1,9 @@
 import streamlit as st
 import requests 
 import pandas as pd
-import seaborn as sns
-import matplotlib.pyplot as plt
-import plotly.express as px
+#import seaborn as sns
+#import matplotlib.pyplot as plt
+#import plotly.express as px
 
 
 st.title('Hello Wilders, welcome to my application!')
@@ -16,4 +16,11 @@ df_cars
 
 #graphique
 st.line_chart(df_cars['cubicinches'])
+
+st.sidebar.title("coucou")
+st.sidebar.write("hello")
+
+option_velo = st.sidebar.selectbox(
+	    'Quel type de vélo ?',
+	    ('mechanical', 'ebike'))
 
