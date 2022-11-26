@@ -1,5 +1,5 @@
 numpy==1.21.5
-seaborn==0.11.0
+seaborn==1.16.0
 pandas==1.1.3
 streamlit==0.79.0
 
