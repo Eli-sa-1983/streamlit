@@ -26,6 +26,13 @@ option_velo = st.sidebar.selectbox(
 graphique
 st.line_chart(df_cars['cubicinches'])
 
+viz_correlation = sns.heatmap(df_cars.corr(), 
+								center=0,
+								cmap = sns.color_palette("vlag", as_cmap=True)
+								)
+
+st.pyplot(viz_correlation.figure)
+
 #def USA():
     #st.markdown("USA")
     #st.sidebar.markdown("USA")
