@@ -22,11 +22,7 @@ def accueil():
 def page2():
     st.markdown("USA")
     st.sidebar.markdown("USA")
-    plt.scatter(data_frame = (df_cars[df_cars['continent'] == "US."]),
-                    x="Weight_Lbs",
-                    y= "Miles per gallon_(mpg)",
-                    size="Weight_Lbs",
-                    color="Weight_Lbs")
+   
 
 def page3():
     st.markdown("Japan")
@@ -38,7 +34,7 @@ def page4():
 
 page_names_to_funcs = {
     "Accueil": accueil,
-    "Page 2": page2,
+    "USA": page2,
     "Page 3": page3,
     "Page 4": page4,
     }
