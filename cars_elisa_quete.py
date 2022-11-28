@@ -17,7 +17,7 @@ def accueil():
     
     st.sidebar.markdown('Cars')
     st.write(df_cars)
-    viz_correlation = sns.heatmap(df_weather.corr(), 
+    viz_correlation = sns.heatmap(df_cars.corr(), 
 								center=0,
 								cmap = sns.color_palette("vlag", as_cmap=True)
 								)
