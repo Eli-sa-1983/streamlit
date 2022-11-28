@@ -44,7 +44,7 @@ def Japan():
 page_names_to_funcs = {
     "USA": US,
     "Europe": Europe,
-    "Japan": Japan.,
+    "Japan": Japan,
     }
 
 
