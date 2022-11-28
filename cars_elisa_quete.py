@@ -2,6 +2,7 @@ import streamlit as st
 import requests 
 import pandas as pd
 from PIL import Image
+import matplotlib.pyplot as plt
 
 link = "https://raw.githubusercontent.com/murpi/wilddata/master/quests/cars.csv"
 df_cars = pd.read_csv(link)
@@ -21,6 +22,11 @@ def accueil():
 def page2():
     st.markdown("USA")
     st.sidebar.markdown("USA")
+    plt.scatter(data_frame = (df_cars[df_cars['continent'] == "US."]),
+                    x="Weight_Lbs",
+                    y= "Miles per gallon_(mpg)",
+                    size="Weight_Lbs",
+                    color="Weight_Lbs")
 
 def page3():
     st.markdown("Japan")
