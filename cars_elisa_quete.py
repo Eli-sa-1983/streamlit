@@ -3,8 +3,8 @@ import streamlit as st
 import requests 
 import pandas as pd
 import seaborn as sns
-#import matplotlib.pyplot as plt
-#import plotly.express as px
+import matplotlib.pyplot as plt
+import plotly.express as px
 
 
 st.title('Hello Wilders, welcome to my application!')
