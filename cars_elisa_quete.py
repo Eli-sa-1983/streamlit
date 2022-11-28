@@ -21,8 +21,8 @@ from PIL import Image
 
 
 #option_velo = st.sidebar.selectbox(
-	    'Quel marché vouslez vous voir ?',
-	    ('US.','Europe.', 'Japan.'))
+	    #'Quel marché vouslez vous voir ?',
+	    #('US.','Europe.', 'Japan.'))
 
 
 def US():
