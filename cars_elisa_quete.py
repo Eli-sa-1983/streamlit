@@ -26,8 +26,8 @@ from PIL import Image
 
 
 def US():
-    st.markdown("US ❄️")
-    st.sidebar.markdown("US❄️")
+    st.markdown("US")
+    st.sidebar.markdown("US")
     st.sidebar.title("Elisa")
     st.sidebar.write("Cid")
     st.image('')
@@ -36,12 +36,12 @@ def US():
     
 
 def Europe():
-    st.markdown("Europe ❄️")
-    st.sidebar.markdown("Europe❄️")
+    st.markdown("Europe")
+    st.sidebar.markdown("Europe")
 
 def Japan():
-    st.markdown("Japan 🎉")
-    st.sidebar.markdown("# Japan🎉")
+    st.markdown("Japan")
+    st.sidebar.markdown("Japan")
 
 page_names_to_funcs = {
     "USA": US,
