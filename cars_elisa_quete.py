@@ -4,7 +4,7 @@ import requests
 import pandas as pd
 import seaborn as sns
 import matplotlib as plt
-import plotly.express as px
+
 
 
 st.title('Hello Wilders, welcome to my application!')
