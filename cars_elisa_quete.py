@@ -4,6 +4,7 @@ import requests
 import pandas as pd
 import seaborn as sns
 import matplotlib as plt
+from PIL import Image
 
 
 
@@ -18,10 +19,32 @@ df_cars
 #graphique
 st.line_chart(df_cars['cubicinches'])
 
-st.sidebar.title("Elisa")
-st.sidebar.write("Cid")
+
 
 option_velo = st.sidebar.selectbox(
 	    'Quel marché vouslez vous voir ?',
 	    ('US.','Europe.', 'Japan.'))
+
+def US.():
+    
+    st.sidebar.title("Elisa")
+    st.sidebar.write("Cid")
+    st.image('')
+    
+
+def Europe.():
+    st.markdown("Europe. ❄️")
+    st.sidebar.markdown("Europe.❄️")
+
+def page3():
+    st.markdown("# Page 3 🎉")
+    st.sidebar.markdown("# Page 3 🎉")
+
+page_names_to_funcs = {
+    "USA": US.,
+    "Europe": Europe.,
+    "Japan": Japan.,
+    }
+
+
 
