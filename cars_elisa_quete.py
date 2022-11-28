@@ -20,11 +20,16 @@ def page2():
 def page3():
     st.markdown("Japan")
     st.sidebar.markdown("Japan")
+    
+def page4():
+    st.markdown("pays")
+    st.sidebar.markdown("pays")
 
 page_names_to_funcs = {
     "Accueil": accueil,
     "Page 2": page2,
     "Page 3": page3,
+    "Page 4": page4,
     }
 
 selected_page = st.sidebar.selectbox("Select a page", page_names_to_funcs.keys())
