@@ -14,12 +14,12 @@ def accueil():
     
 
 def page2():
-    st.markdown("# Page 2 ❄️")
-    st.sidebar.markdown("# Page 2 ❄️")
+    st.markdown("USA")
+    st.sidebar.markdown("USA")
 
 def page3():
-    st.markdown("# Page 3 🎉")
-    st.sidebar.markdown("# Page 3 🎉")
+    st.markdown("Japan")
+    st.sidebar.markdown("Japan")
 
 page_names_to_funcs = {
     "Accueil": accueil,
