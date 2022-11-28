@@ -3,7 +3,7 @@ import streamlit as st
 import requests 
 import pandas as pd
 import seaborn as sns
-import matplotlib.pyplot as plt
+import matplotlib as plt
 import plotly.express as px
 
 
