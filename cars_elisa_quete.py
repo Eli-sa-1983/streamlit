@@ -1,61 +1,35 @@
-
 import streamlit as st
 import requests 
-import pandas as pd
-import seaborn as sns
-import matplotlib as plt
 from PIL import Image
 
+st.image('logo-grenoble.png',width=600)
+
+st.sidebar.header('Les Dott!')
 
 
-st.title('Hello Wilders, welcome to my application!')
-
-st.write("I enjoy to discover stremalit possibilities")
-
-link = "https://raw.githubusercontent.com/murpi/wilddata/master/quests/cars.csv"
-df_cars = pd.read_csv(link)
-df_cars
-
-
-
-
-
-option_velo = st.sidebar.selectbox(
-	    'Quel marché vouslez vous voir ?',
-	    ('US.','Europe.', 'Japan.'))
-#graphique
-st.line_chart(df_cars['cubicinches'])
-
-viz_correlation = sns.heatmap(df_cars.corr(), 
-								center=0,
-								cmap = sns.color_palette("vlag", as_cmap=True)
-								)
-
-st.pyplot(viz_correlation.figure)
-
-#def USA():
-    #st.markdown("USA")
-    #st.sidebar.markdown("USA")
-    #st.sidebar.title("Elisa")
-    #st.sidebar.write("Cid")
-    #st.image('')
-
+def accueil():
+    
+    st.sidebar.markdown('Les Dott de Grenoble!')
+    st.title('Dott, Trottinettes et Velos de Grenoble!')
+    st.image('logo-grenoble.png')
     
 
-#def Europe():
-    #st.markdown("Europe")
-    #st.sidebar.markdown("Europe")
+def page2():
+    st.markdown("# Page 2 ❄️")
+    st.sidebar.markdown("# Page 2 ❄️")
 
-#def Japan():
-    #st.markdown("Japan")
-    #st.sidebar.markdown("Japan")
+def page3():
+    st.markdown("# Page 3 🎉")
+    st.sidebar.markdown("# Page 3 🎉")
 
-#page_names_to_funcs = {
-    #"USA": USA,
-    #"Europe": Europe,
-    #"Japan": Japan,
-    #}
+page_names_to_funcs = {
+    "Accueil": accueil,
+    "Page 2": page2,
+    "Page 3": page3,
+    }
 
-#selected_page = st.sidebar.selectbox("Select a page", page_names_to_funcs.keys())
-#page_names_to_funcs[selected_page]()
+selected_page = st.sidebar.selectbox("Select a page", page_names_to_funcs.keys())
+page_names_to_funcs[selected_page]()
+
+st.sidebar.image('dott_gre.jpeg',width=300)
 
