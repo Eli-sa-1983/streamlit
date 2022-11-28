@@ -25,8 +25,8 @@ from PIL import Image
 	    #('US.','Europe.', 'Japan.'))
 
 
-def US():
-    st.markdown("US")
+def USA():
+    st.markdown("USA")
     st.sidebar.markdown("US")
     #st.sidebar.title("Elisa")
     #st.sidebar.write("Cid")
