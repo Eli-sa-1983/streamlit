@@ -1,7 +1,10 @@
 import streamlit as st
 import requests 
+import pandas as pd
 from PIL import Image
 
+link = "https://raw.githubusercontent.com/murpi/wilddata/master/quests/cars.csv"
+df_cars = pd.read_csv(link)
 
 st.sidebar.header('CARS')
 
@@ -10,6 +13,8 @@ def accueil():
     
     st.sidebar.markdown('Cars')
     st.title('Cars')
+    st.write(df_cars)
+
     
     
 
