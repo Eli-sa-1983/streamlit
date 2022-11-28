@@ -3,13 +3,13 @@ import requests
 from PIL import Image
 
 
-st.sidebar.header('Les Dott!')
+st.sidebar.header('CARS')
 
 
 def accueil():
     
-    st.sidebar.markdown('Les Dott de Grenoble!')
-    st.title('Dott, Trottinettes et Velos de Grenoble!')
+    st.sidebar.markdown('Cars')
+    st.title('Cars')
     
     
 
@@ -30,5 +30,4 @@ page_names_to_funcs = {
 selected_page = st.sidebar.selectbox("Select a page", page_names_to_funcs.keys())
 page_names_to_funcs[selected_page]()
 
-st.sidebar.image('dott_gre.jpeg',width=300)
 
