@@ -28,8 +28,8 @@ from PIL import Image
 def US():
     st.markdown("US")
     st.sidebar.markdown("US")
-    st.sidebar.title("Elisa")
-    st.sidebar.write("Cid")
+    #st.sidebar.title("Elisa")
+    #st.sidebar.write("Cid")
     st.image('')
 #graphique
     st.sidebar.line_chart(df_cars['cubicinches'])
