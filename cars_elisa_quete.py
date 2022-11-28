@@ -21,16 +21,16 @@ def accueil():
 
 def page2():
     st.markdown("USA")
-    st.sidebar.markdown("USA")
+    st.sidebar.markdown("Oncle Sam")
    
 
 def page3():
     st.markdown("Japan")
-    st.sidebar.markdown("Japan")
+    st.sidebar.markdown("Soleil Levant")
     
 def page4():
     st.markdown("Europe")
-    st.sidebar.markdown("Europe")
+    st.sidebar.markdown("Vieux Continent")
 
 page_names_to_funcs = {
     "Accueil": accueil,
