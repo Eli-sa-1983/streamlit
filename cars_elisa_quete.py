@@ -16,8 +16,7 @@ link = "https://raw.githubusercontent.com/murpi/wilddata/master/quests/cars.csv"
 df_cars = pd.read_csv(link)
 df_cars
 
-#graphique
-st.line_chart(df_cars['cubicinches'])
+
 
 
 
@@ -31,6 +30,8 @@ def US():
     st.sidebar.title("Elisa")
     st.sidebar.write("Cid")
     st.image('')
+#graphique
+    st.sidebar.line_chart(df_cars['cubicinches'])
     
 
 def Europe():
