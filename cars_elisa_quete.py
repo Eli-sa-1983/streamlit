@@ -23,7 +23,7 @@ df_cars
 option_velo = st.sidebar.selectbox(
 	    'Quel marché vouslez vous voir ?',
 	    ('US.','Europe.', 'Japan.'))
-graphique
+#graphique
 st.line_chart(df_cars['cubicinches'])
 
 viz_correlation = sns.heatmap(df_cars.corr(), 
