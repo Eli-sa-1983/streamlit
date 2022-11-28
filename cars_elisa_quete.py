@@ -25,24 +25,25 @@ option_velo = st.sidebar.selectbox(
 	    'Quel marché vouslez vous voir ?',
 	    ('US.','Europe.', 'Japan.'))
 
-def US.():
-    
+def US():
+    st.markdown("US ❄️")
+    st.sidebar.markdown("US❄️")
     st.sidebar.title("Elisa")
     st.sidebar.write("Cid")
     st.image('')
     
 
-def Europe.():
-    st.markdown("Europe. ❄️")
-    st.sidebar.markdown("Europe.❄️")
+def Europe():
+    st.markdown("Europe ❄️")
+    st.sidebar.markdown("Europe❄️")
 
-def page3():
-    st.markdown("# Page 3 🎉")
-    st.sidebar.markdown("# Page 3 🎉")
+def Japan():
+    st.markdown("Japan 🎉")
+    st.sidebar.markdown("# Japan🎉")
 
 page_names_to_funcs = {
-    "USA": US.,
-    "Europe": Europe.,
+    "USA": US,
+    "Europe": Europe,
     "Japan": Japan.,
     }
 
