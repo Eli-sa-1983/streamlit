@@ -24,7 +24,7 @@ option_velo = st.sidebar.selectbox(
 	    'Quel marché vouslez vous voir ?',
 	    ('US.','Europe.', 'Japan.'))
 graphique
-    st.line_chart(df_cars['cubicinches'])
+st.line_chart(df_cars['cubicinches'])
 
 #def USA():
     #st.markdown("USA")
