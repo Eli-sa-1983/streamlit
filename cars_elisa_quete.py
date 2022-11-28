@@ -30,7 +30,7 @@ def accueil():
 def page2():
     st.markdown("USA")
     st.line_chart(df_cars['continent'])
-    st.bar_chart(df_cars['continent'])
+    st.bar_chart(df_cars['continent']=="US.")
     st.sidebar.markdown("Oncle Sam")
 
    
