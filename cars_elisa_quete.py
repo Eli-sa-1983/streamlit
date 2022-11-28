@@ -12,17 +12,18 @@ from PIL import Image
 
 #st.write("I enjoy to discover stremalit possibilities")
 
-link = "https://raw.githubusercontent.com/murpi/wilddata/master/quests/cars.csv"
-df_cars = pd.read_csv(link)
-df_cars
+#link = "https://raw.githubusercontent.com/murpi/wilddata/master/quests/cars.csv"
+#df_cars = pd.read_csv(link)
+#df_cars
 
 
 
 
 
-option_velo = st.sidebar.selectbox(
+#option_velo = st.sidebar.selectbox(
 	    'Quel marché vouslez vous voir ?',
 	    ('US.','Europe.', 'Japan.'))
+
 
 def US():
     st.markdown("US ❄️")
@@ -48,5 +49,6 @@ page_names_to_funcs = {
     "Japan": Japan,
     }
 
-
+selected_page = st.sidebar.selectbox("Select a page", page_names_to_funcs.keys())
+page_names_to_funcs[selected_page]()
 
