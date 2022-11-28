@@ -39,7 +39,7 @@ page_names_to_funcs = {
     "Europe": page4,
     }
 
-selected_page = st.sidebar.selectbox("Select a page", page_names_to_funcs.keys())
+selected_page = st.sidebar.selectbox("Chosissez votre page :", page_names_to_funcs.keys())
 page_names_to_funcs[selected_page]()
 
 
