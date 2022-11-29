@@ -36,7 +36,7 @@ def page2():
 
 def page3():
     st.markdown("Japan")
-    st.write(df_cars_jp)
+    st.write(df_cars[df_cars['continent']==' Japan.'])
     st.sidebar.markdown("Soleil Levant")
     
     
