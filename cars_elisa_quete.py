@@ -44,9 +44,6 @@ def page2():
 def page3():
     st.markdown("Japon")
     st.write(df_cars[df_cars['continent']==' Japan.'].sort_values('year', ascending=False))
-  
-    fig2 = px.line(df_cars, x='year', y='continent')
-    st.plotly_chart(fig2)
     st.sidebar.image('flag_japan.jpeg',width=200)
     st.sidebar.markdown("Soleil Levant")
     
