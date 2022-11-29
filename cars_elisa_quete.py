@@ -29,7 +29,7 @@ def accueil():
 
 def page2():
     st.markdown("USA")
-    st.line_chart(df_cars['continent'])
+    st.line_chart(df_cars['continent'].sort_values('mpg', ascending=False))
     st.write(df_cars[df_cars['continent']==' US.'])
 
    
