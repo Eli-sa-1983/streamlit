@@ -30,12 +30,13 @@ def accueil():
 def page2():
     st.markdown("USA")
     st.line_chart(df_cars['continent'])
+    st.write(df_cars[df_cars['continent']==' US.'])
     st.sidebar.markdown("Oncle Sam")
 
    
 
 def page3():
-    st.markdown("Japan")
+    st.markdown("Japon")
     st.write(df_cars[df_cars['continent']==' Japan.'])
     st.sidebar.markdown("Soleil Levant")
     
@@ -47,7 +48,7 @@ def page4():
 page_names_to_funcs = {
     "Accueil": accueil,
     "USA": page2,
-    "Japan": page3,
+    "Japon": page3,
     "Europe": page4,
     }
 
