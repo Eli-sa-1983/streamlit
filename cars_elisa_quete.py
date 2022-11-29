@@ -31,7 +31,7 @@ def page2():
     st.markdown("USA")
     st.line_chart(df_cars['continent'])
     st.write(df_cars[df_cars['continent']==' US.'])
-    st.sidebar.image('flag_usa.jpeg',width=600)
+    st.sidebar.image('flag_usa.jpeg',width=200)
 	
 
    
