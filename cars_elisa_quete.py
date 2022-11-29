@@ -44,15 +44,15 @@ def page2():
 def page3():
     st.markdown("Japon")
     st.write(df_cars[df_cars['continent']==' Japan.'])
-    st.sidebar.markdown("Soleil Levant")
     st.sidebar.image('flag_japan.jpeg',width=200)
+    st.sidebar.markdown("Soleil Levant")
     
     
 def page4():
     st.markdown("Europe")
     st.write(df_cars[df_cars['continent']==' Europe.'])
-    st.sidebar.markdown("Vieux Continent")
     st.sidebar.image('flag_europe.jpeg',width=200)
+    st.sidebar.markdown("Vieux Continent")
     
 
 page_names_to_funcs = {
