@@ -36,6 +36,7 @@ def page2():
 
 def page3():
     st.markdown("Japan")
+    st.write(df_cars_jp)
     st.sidebar.markdown("Soleil Levant")
     
     
