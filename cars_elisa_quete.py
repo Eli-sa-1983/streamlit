@@ -32,20 +32,7 @@ def page2():
     st.line_chart(df_cars['continent'])
     st.write(df_cars[df_cars['continent']==' US.'])
 
-    fig = plt.figure(figsize=(12, 9))
-
-    fig = px.scatter(data_frame = df_cars,
-                    y= "Miles per gallon_(mpg)", x="Weight_Lbs",
-                    color="Continent",
-                    )
-    fig.update_layout(title ="<b>Distance parcourue en fonction du poids des véhicules<b>",
-                    title_x = 0.5,
-                    dragmode='select',
-                    width=1300,
-                    height=700,
-                    hovermode='closest',
-                    template='plotly_dark')
-    st.plotly_chart(fig, config = config, use_container_width = True)
+   
 
     st.sidebar.markdown("Oncle Sam")
 
