@@ -11,6 +11,7 @@ df_cars = pd.read_csv(link)
 
 st.sidebar.header('CARS')
 st.title('Vrouuuuum!! Vrouuummmm!!')
+st.color_picker(label, value=None, key=None, help=None, on_change=None, args=None, kwargs=None, *, disabled=False, label_visibility="visible")
 
 
 def accueil():
