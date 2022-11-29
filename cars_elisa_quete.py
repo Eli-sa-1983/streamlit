@@ -11,8 +11,7 @@ df_cars = pd.read_csv(link)
 
 st.sidebar.header('CARS')
 st.title('Vrouuuuum!! Vrouuummmm!!')
-color = st.color_picker('Pick A Color', '#00f900')
-st.write('The current color is', color)
+
 
 
 def accueil():
