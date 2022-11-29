@@ -38,6 +38,7 @@ def page3():
     st.markdown("Japan")
     st.sidebar.markdown("Soleil Levant")
     
+    
 def page4():
     st.markdown("Europe")
     st.sidebar.markdown("Vieux Continent")
